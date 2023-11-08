@@ -2,4 +2,4 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-Kevin's Unique Touch is a static website showcasing the detailing portfolio of Kevin Fritz and his detailling company Kevin's Unique Touch
+Kevin's Unique Touch is a static website showcasing the detailing portfolio of Kevin Fritz and his detailling company Kevin's Unique Touchy
