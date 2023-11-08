@@ -9,7 +9,7 @@ export default function Home() {
       <div
       className="bg-cover bg-center h-screen"
       style={{
-        backgroundImage: `url('/images/m3.JPG')`
+        backgroundImage: `url('/images/m3.jpg')`
       }}
       >
         <div>        
