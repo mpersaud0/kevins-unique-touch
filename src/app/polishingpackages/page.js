@@ -11,30 +11,31 @@ export default function Home() {
         detailPackages: [
             {
                 id: 1,
-                name: "BASIC",
-                longname: "THE BASIC PACKAGE",
-                car: "$100",
-                suv: "$150",
-                lgtruck: "$200",
-                info: "‣ Foam Bath\n ‣ Hand Wash\n ‣ Bugs & Tar Removed\n ‣ Wheels Cleaned\n ‣ Tires Cleaned & Conditioned\n ‣Spray Sealant Applied\n ‣ Windows & Door Jambs Cleaned\n ‣ Light Interior Vacuum\n ‣ Light Interior Wipe Down"
-            },
-            {
-                id: 2,
-                name: "DELUXE",
-                longname: "THE DELUXE PACKAGE",
+                name: "LEVEL 1 EXTERIOR",
+                longname: "GLOSS BOSS",
                 car: "$250",
                 suv: "$325",
                 lgtruck: "$400",
-                info: "Basic Package +\n ‣ Clay Bar Treatment\n ‣ Wheels Deep Cleaned\n ‣ Tires Cleaned and Conditioned\n ‣ Apply 3 month Sealant\n ‣ Windows and Door Jambs Cleaned\n ‣ Interior Vacuum\n ‣ All plastics, dashboard and center console cleaned and conditioned\n ‣ Plastic and Rubber floor mats power washed, cleaned and conditioned\n ‣ Interior windows left streak free\n ‣ Light pet hair removal\n *Air Freshener available upon request*"
+                info: "‣ Wheels and wheel wells deep cleaned\n ‣ Tires degreased and conditioned\n ‣ Bugs and tar removed\n ‣ Paint decontamination and clay bar treatment\n ‣ Exterior foam & hand wash\n ‣ Exterior trim cleaned & conditioned\n ‣ Paint sealed with 6 month sealant"
+            },
+            {
+                id: 2,
+                name: "LEVEL 2 EXTERIOR",
+                longname: "ALL IN ONE",
+                car: "$500",
+                suv: "$655",
+                lgtruck: "$800",
+                info: "Level 1 Exterior +\n ‣ Engine bay detailed\n ‣ Exhaust tips polished\n ‣ Gloss enhancement with our all in one polish"
             },
             {
                 id: 3,
-                name: "PRESTIGE",
-                longname: "THE PRESTIGE PACKAGE",
-                car: "$425",
-                suv: "$450",
-                lgtruck: "$580",
-                info: "Deluxe package +\n Chemical decontamination and clay bar treatment\n Wheels and wheel wells deep cleaned\n Tires cleaned and Conditioned\n Bugs, tar and tree sap removed\n  Door jambs cleaned and Conditioned"
+                name: "LEVEL 3 EXTERIOR",
+                longname: "RESTORATION",
+                car: "$1,100",
+                suv: "$1,400",
+                lgtruck: "$1,700",
+                info: "Level 2 Exterior +\n ‣ Spot sanding to remove or improve deep imperfections\n ‣ Multi - Step paint correction"
+                
             }
         ]
     })
@@ -64,7 +65,7 @@ function toggleActiveInfo(index) {
   return (
     <main className="flex flex-col pt-2 max-h-screen">
       <NavBar />
-      <div className="bg-cover bg-center h-screen" style={{backgroundImage: `url('/images/m3.jpg')`}}>
+      <div className="bg-cover bg-center h-screen" style={{backgroundImage: `url('/images/mustang.jpg')`}}>
         <div className='p-12'><br></br></div>
       <div className='bg-red-700  p-8 font-poppins rounded-3xl mx-auto flex flex-row justify-between text-2xl max-w-3xl'>
             {appState.detailPackages.map((packages, index) => (

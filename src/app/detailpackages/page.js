@@ -16,7 +16,7 @@ export default function Home() {
                 car: "$100",
                 suv: "$150",
                 lgtruck: "$200",
-                info: "Foam Bath\n Hand Wash\n Bugs & Tar Removed\n Wheels Cleaned\n Tires Cleaned & Conditioned\n Spray Sealant Applied\n Windows & Door Jambs Cleaned\n Light Interior Vacuum\n Light Interior Wipe Down"
+                info: "‣ Foam Bath\n ‣ Hand Wash\n ‣ Bugs & Tar Removed\n ‣ Wheels Cleaned\n ‣ Tires Cleaned & Conditioned\n ‣Spray Sealant Applied\n ‣ Windows & Door Jambs Cleaned\n ‣ Light Interior Vacuum\n ‣ Light Interior Wipe Down"
             },
             {
                 id: 2,
@@ -25,7 +25,7 @@ export default function Home() {
                 car: "$250",
                 suv: "$325",
                 lgtruck: "$400",
-                info: "Basic Package +\n Clay Bar Treatment\n Wheels Deep Cleaned\n Tires Cleaned and Conditioned\n Apply 3 month Sealant\n Windows and Door Jambs Cleaned\n Interior Vacuum\n All plastics, dashboard and center console cleaned and conditioned\n Plastic and Rubber floor mats power washed, cleaned and conditioned\n Interior windows left streak free\n Light pet hair removal\n *Air Freshener available upon request"
+                info: "Basic Package +\n ‣ Clay Bar Treatment\n ‣ Wheels Deep Cleaned\n ‣ Tires Cleaned and Conditioned\n ‣ Apply 3 month Sealant\n ‣ Windows and Door Jambs Cleaned\n ‣ Interior Vacuum\n ‣ All plastics, dashboard and center console cleaned and conditioned\n ‣ Plastic and Rubber floor mats power washed, cleaned and conditioned\n ‣ Interior windows left streak free\n ‣ Light pet hair removal\n *Air Freshener available upon request*"
             },
             {
                 id: 3,
@@ -34,7 +34,7 @@ export default function Home() {
                 car: "$425",
                 suv: "$450",
                 lgtruck: "$580",
-                info: "Deluxe package +\n Chemical decontamination and clay bar treatment\n Wheels and wheel wells deep cleaned\n Tires cleaned and Conditioned\n Bugs, tar and tree sap removed\n  Door jambs cleaned and Conditioned"
+                info: "Deluxe package +\n ‣ Chemical decontamination and clay bar treatment\n ‣ Wheels and wheel wells deep cleaned\n ‣ Tires cleaned and Conditioned\n ‣ Bugs, tar and tree sap removed\n  ‣ Door jambs cleaned and Conditioned"
             }
         ]
     })
