@@ -69,9 +69,11 @@ function toggleActiveInfo(index) {
       <div className='bg-red-700  p-8 font-poppins rounded-3xl mx-auto flex flex-row justify-between text-2xl max-w-3xl'>
             {appState.detailPackages.map((packages, index) => (
                 <div key={index} className={toggleActiveStyles(index)} onClick={() => {toggleActive(index)}}>
-                    <button>
+                    <motion.button
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 1.5 }}>
                         <h1>{ packages.name }</h1>
-                    </button>
+                    </motion.button>
                 </div>
             ))}
           </div>

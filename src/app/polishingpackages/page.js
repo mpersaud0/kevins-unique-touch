@@ -2,16 +2,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import NavBar from '../components/navbar'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 export default function Home() {
     const [appState, changeState] = useState({
-        activePackage: 1,
+        activeObject: null,
         detailPackages: [
             {
                 id: 1,
-                name: "LEVEL 1 EXTERIOR",
+                name: "LEVEL 1",
                 longname: "GLOSS BOSS",
                 car: "$250",
                 suv: "$325",
@@ -20,7 +20,7 @@ export default function Home() {
             },
             {
                 id: 2,
-                name: "LEVEL 2 EXTERIOR",
+                name: "LEVEL 2",
                 longname: "ALL IN ONE",
                 car: "$500",
                 suv: "$655",
@@ -29,7 +29,7 @@ export default function Home() {
             },
             {
                 id: 3,
-                name: "LEVEL 3 EXTERIOR",
+                name: "LEVEL 3",
                 longname: "RESTORATION",
                 car: "$1,100",
                 suv: "$1,400",
@@ -39,6 +39,15 @@ export default function Home() {
             }
         ]
     })
+
+    useEffect(() => {
+        // Set the default activeObject to detailPackages[0] when the component mounts
+        changeState({
+            ...appState,
+            activeObject: appState.detailPackages[0]
+        });
+    }, []);
+
 
 function toggleActive(index) {
     changeState({...appState, activeObject: appState.detailPackages[index]})
@@ -70,9 +79,11 @@ function toggleActiveInfo(index) {
       <div className='bg-red-700  p-8 font-poppins rounded-3xl mx-auto flex flex-row justify-between text-2xl max-w-3xl'>
             {appState.detailPackages.map((packages, index) => (
                 <div key={index} className={toggleActiveStyles(index)} onClick={() => {toggleActive(index)}}>
-                    <button>
+                    <motion.button
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 1.5 }}>
                         <h1>{ packages.name }</h1>
-                    </button>
+                    </motion.button>
                 </div>
             ))}
           </div>
@@ -87,6 +98,10 @@ function toggleActiveInfo(index) {
                     <p className='whitespace-pre'>{ packages.info}</p>
                 </div>
             ))}
+          </div>
+          <div className='mx-auto text-center py-8'>
+            <h1 className='text-white text-2xl font-poppins'>Window Polishing -$250 add on </h1>
+            <h1 className='text-white text-2xl font-poppins'>Scratch Removal - Starting at $100 </h1>
           </div>
       </div>
     </main>
